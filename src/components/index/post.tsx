@@ -2,8 +2,8 @@ import Link from 'next/link';
 // eslint-disable-next-line sort-imports
 import AuthorElement from '../author';
 import PostType from '../../types/post';
-import Section from './section';
 import Tags from '../tags';
+import Section from './section';
 
 const PostSummaryCard = ({ postData }: { postData: PostType }): JSX.Element => (
   <Link href={`/posts/${postData.slug}`} passHref>

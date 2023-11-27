@@ -1,10 +1,9 @@
 import ErrorPage from 'next/error';
 import { NextPage } from 'next';
 import ReactMarkdown from 'react-markdown';
-import { ReactMarkdownProps } from 'react-markdown/lib/complex-types';
 import { useRouter } from 'next/router';
 // eslint-disable-next-line sort-imports
-import { ClassAttributes, ImgHTMLAttributes } from 'react';
+import { ImgHTMLAttributes } from 'react';
 import { getAllPosts, getPostBySlug } from '../../lib/posts-utils';
 import Author from '../../types/author';
 import Img from '../../components/image';
@@ -12,17 +11,12 @@ import Layout from '../../components/layout/layout';
 import PostHeader from '../../components/post-header';
 import PostType from '../../types/post';
 
-// react markdown用に独自のimgタグを定義
-type ImgProps = ClassAttributes<HTMLImageElement> &
-  ImgHTMLAttributes<HTMLImageElement> &
-  ReactMarkdownProps;
-
-const MarkdownImg: React.FC<ImgProps> = ({
+const MarkdownImg = ({
   src,
   alt = 'no img',
   width,
   height,
-}) => {
+}: ImgHTMLAttributes<HTMLImageElement>) => {
   if (!src) return <></>;
   return <Img src={src} alt={alt} width={width} height={height} />;
 };

@@ -21,7 +21,7 @@ type PartialPostType = {
 
 export const getPostBySlug = (
   slug_with_exp: string,
-  fields: string[] = []
+  fields: string[] = [],
 ): PartialPostType => {
   const slug = slug_with_exp.replace(/\.md$/, '');
   const fullPath = join(postsDirectory, `${slug}.md`);
@@ -46,7 +46,7 @@ export const getPostBySlug = (
     }
     if (field === 'tags' && Array.isArray(frontMatter[field])) {
       items[field] = frontMatter[field].map(
-        (value: { toString: () => string }) => value.toString()
+        (value: { toString: () => string }) => value.toString(),
       );
     }
   });
@@ -56,7 +56,5 @@ export const getPostBySlug = (
 
 export const getAllPosts = (fields: string[] = []): PartialPostType[] => {
   const slugs = getPostSlugs();
-  const posts = slugs.map((slug) => getPostBySlug(slug, fields));
-
-  return posts;
+  return slugs.map((slug) => getPostBySlug(slug, fields));
 };

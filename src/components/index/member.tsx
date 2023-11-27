@@ -3,8 +3,8 @@ import { fetchAllAuthorData } from '../../lib/data-utils';
 // eslint-disable-next-line sort-imports
 import Author from '../../types/author';
 import Icon from '../icon';
-import Section from './section';
 import Tags from '../tags';
+import Section from './section';
 
 const MemberCard = ({ author }: { author: Author }): JSX.Element => {
   let memnberCard = (
