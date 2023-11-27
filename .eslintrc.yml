@@ -29,7 +29,7 @@ rules:
   import/no-extraneous-dependencies:
     - error
     - devDependencies:
-        - '**/*.config.?s'
+      - '**/*.config.?s'
   # import 部分が絶対カオスになるので、整理のために。
   import/order: warn
   # React 17 以降は、`React` のインポートは不要。
@@ -44,6 +44,11 @@ rules:
   # import 部分が絶対カオスになるので、整理のために。
   # import/order と競合する場合、import/order を優先する。
   sort-imports: warn
+  react/no-unknown-property:
+    - "error"
+    - ignore:
+      - css
+      - tw
 settings:
   import/resolver:
     typescript:

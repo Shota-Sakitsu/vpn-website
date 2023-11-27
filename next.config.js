@@ -56,5 +56,6 @@ module.exports = {
     'micromark-util-normalize-identifier',
     'micromark-util-classify-character',
     'micromark-util-decode-numeric-character-reference',
-  ]
+  ],
+  output: "export",
 }

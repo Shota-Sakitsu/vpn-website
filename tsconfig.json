@@ -17,7 +17,7 @@
     "sourceMap": true,
     "skipLibCheck": true,
     "strict": true,
-    "target": "ES2019"
+    "target": "ESNext"
   },
   "exclude": ["dist", "node_modules"],
   "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "*.config.?s"]
