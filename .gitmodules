@@ -1,0 +1,4 @@
+[submodule "public"]
+	path = public
+	url = https://github.com/Shota-Sakitsu/vpn-website-resource.git
+	branch = Shota-Sakitsu-patch-1
