@@ -18,19 +18,19 @@
 
 ### システム要件(ローカル開発環境)
 
-- 最新の Node.js v16 が動作する環境
+- 最新の Node.js v20 が動作する環境
 
 ### インストール
 
 ```sh
-npm ci
+pnpm install --frozen-lockfile
 ```
 
 ### ビルドして結果を確認する
 
 ```sh
-npm run build
-npm run serve
+pnpm build
+pnpm serve
 ```
 
 `Ctrl + C` で中止します。
@@ -38,7 +38,7 @@ npm run serve
 ### 実装のために、ホットコード プッシュ環境を作成する
 
 ```sh
-npm start
+pnpm start
 ```
 
 `Ctrl + C` で中止します。
@@ -58,7 +58,7 @@ doocker-compose up
 ### Linting
 
 ```sh
-npm run lint
+pnpm lint
 ```
 
 ### コミットについて
