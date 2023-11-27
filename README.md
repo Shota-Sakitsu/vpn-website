@@ -134,9 +134,9 @@ tamayurasouki:
 画像等の静的リソースは別のリポジトリ、`vpn-website-resource`で管理しています。
 https://github.com/VirtualProgrammersNetwork/vpn-website-resource
 
-`vpn-website-resource`内の`public`以下に適当に配置すれば、ビルド時に自動でリソースとして含まれるようになっています。
+`vpn-website-resource`内に適当に配置すれば、ビルド時に自動でリソースとして含まれるようになっています。
 
-`vpn-website-resource/public/author-icons/tamayurasouki.png`
+`vpn-website-resource/author-icons/tamayurasouki.png`
 を参照するには
 `/author-icons/tamayurasouki.png`と指定してください。
 
