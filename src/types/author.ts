@@ -1,9 +1,9 @@
 type Author = {
   name: string;
-  alphabetName: string | undefined;
-  iconPath: string | undefined;
-  homepageUrl: string | undefined;
-  favs: string[] | undefined;
+  alphabetName?: string;
+  iconPath?: string;
+  homepageUrl?: string;
+  favs: string[];
 };
 
 export default Author;
